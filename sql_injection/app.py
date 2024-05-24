@@ -41,7 +41,7 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
-keywords = ['union', 'select', 'from', 'and', 'or', '*', '/', 'like', '()', '|', '&', 'admin']
+keywords = ['union', 'select', 'from', 'and', 'or', '*', '/', 'like', '()', '|', '&', 'admin', '0x']
 def check_WAF(data):
     for keyword in keywords:
         if keyword in data:
